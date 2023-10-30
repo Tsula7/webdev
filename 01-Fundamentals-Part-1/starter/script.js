@@ -56,7 +56,7 @@ const isFullage = ageSarah >= 18;
 
 
 
-*/
+
 
 const now =2037;
 const ageJonas = now -1991
@@ -67,3 +67,21 @@ x=y=25-10-5;//x=y=10, x=10
 console.log(x,y);
 const averageAge =(ageJonas+ageSarah)/2
 console.log(ageJonas,ageSarah, averageAge);
+*/
+
+const markWeight = 95
+const markHeight=1.88
+
+const johnWeight = 85
+const johnHeight =1.76
+
+bmiMark = markWeight/markHeight **2
+bmimark2 = markWeight/(markHeight*markHeight)
+console.log(bmiMark,bmimark2)
+
+bmiJohn = johnWeight/johnHeight**2
+bmiJohn2 = johnWeight/(johnHeight*johnHeight)
+console.log(bmiJohn, bmiJohn2)
+
+let markHigherBMI = bmiMark> bmiJohn
+console.log(markHigherBMI)
