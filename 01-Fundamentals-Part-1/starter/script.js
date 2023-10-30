@@ -1,4 +1,4 @@
-
+/* 
 let js ='amazing';
 
 //console.log(40 + 8 + 23 - 10);
@@ -55,8 +55,8 @@ console.log(ageSarah >=18);
 const isFullage = ageSarah >= 18;
 
 
-*/
 
+*/
 
 const now =2037;
 const ageJonas = now -1991
