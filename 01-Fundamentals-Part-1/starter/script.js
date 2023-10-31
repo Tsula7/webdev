@@ -69,19 +69,17 @@ const averageAge =(ageJonas+ageSarah)/2
 console.log(ageJonas,ageSarah, averageAge);
 */
 
-const markWeight = 95
-const markHeight=1.88
+const massMark = 78
+const heightMark=1.69
 
-const johnWeight = 85
-const johnHeight =1.76
+const massJohn = 92
+const heightJohn =1.95
 
-bmiMark = markWeight/markHeight **2
-bmimark2 = markWeight/(markHeight*markHeight)
-console.log(bmiMark,bmimark2)
+let BMImark = massMark/(heightMark*heightMark)
+console.log(BMImark)
 
-bmiJohn = johnWeight/johnHeight**2
-bmiJohn2 = johnWeight/(johnHeight*johnHeight)
-console.log(bmiJohn, bmiJohn2)
+let BMIJohn = massJohn/(heightJohn*heightJohn)
+console.log(BMIJohn)
 
-let markHigherBMI = bmiMark> bmiJohn
+let markHigherBMI = BMImark> BMIJohn
 console.log(markHigherBMI)
