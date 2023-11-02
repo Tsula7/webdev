@@ -75,11 +75,11 @@ const heightMark=1.69
 const massJohn = 92
 const heightJohn =1.95
 
-let BMImark = massMark/(heightMark*heightMark)
+const BMImark = massMark/(heightMark*heightMark)
 console.log(BMImark)
 
-let BMIJohn = massJohn/(heightJohn*heightJohn)
+const BMIJohn = massJohn/(heightJohn*heightJohn)
 console.log(BMIJohn)
 
-let markHigherBMI = BMImark> BMIJohn
+const markHigherBMI = BMImark> BMIJohn
 console.log(markHigherBMI)
