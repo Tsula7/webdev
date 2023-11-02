@@ -1,4 +1,4 @@
-/* 
+/*
 let js ='amazing';
 
 //console.log(40 + 8 + 23 - 10);
@@ -40,7 +40,7 @@ console.log(ageJonas*2, ageJonas /10, 2**3);
 
 
 
-//Assihnment Operators
+//Assignment Operators
 let x =10 + 5;
 x +=10; //x=x+10=25
 x *=4; //x=x*4
@@ -67,7 +67,7 @@ x=y=25-10-5;//x=y=10, x=10
 console.log(x,y);
 const averageAge =(ageJonas+ageSarah)/2
 console.log(ageJonas,ageSarah, averageAge);
-*/
+
 
 const massMark = 78
 const heightMark=1.69
@@ -83,3 +83,68 @@ console.log(BMIJohn)
 
 const markHigherBMI = BMImark> BMIJohn
 console.log(markHigherBMI)
+
+
+const firsName = 'Alex';
+const job ='teacher';
+const birthYear =1991;
+const year=2023;
+
+const alex ="I'm "+ firsName + ', a '+ (year-birthYear)+' years old '+job+'!'; //ძველი მეთოდი
+console.log(alex);
+
+const alexNew = `I'M  ${firsName}, a ${year-birthYear} years old ${job}  `//ახალი მეთოდი. ე.წ. Template literals
+console.log(alexNew)
+
+//ძველი მეთოდი
+console.log('String with \n\
+miltiple \n\
+lines');
+
+//Template literals
+console.log(`String with
+multiple
+lines`)
+
+const age = 15;
+if(age >= 18){
+    console.log('Sarah  can start diving license 🚗');
+}else{
+    const yearsLeft = 18-age;
+    console.log(`Sarah is too young. wait another ${yearsLeft} years :)`)
+}
+
+const birthYear=1998;
+
+let century; //გამოცხადდა ცვლადი ბლოკის გარეთ მნიშვნელობის გარეშე.
+if(birthYear<=2000){
+    century=20;
+} else {
+    century=21;
+}
+console.log(century)
+*/
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+if (BMIMark>BMIJohn){
+    console.log(`Mark's BMI is higher than John's!`)
+}else {
+    console.log(`Johns BMI is Higher than Mark's!`)
+}
+
+if (BMIMark>BMIJohn){
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+}else {
+    console.log(`Johns BMI (${BMIJohn}) is Higher than Mark's (${BMIMark})!`)
+}
+
+
+
+
