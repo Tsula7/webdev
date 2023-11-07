@@ -123,7 +123,7 @@ if(birthYear<=2000){
     century=21;
 }
 console.log(century)
-*/
+
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
@@ -144,7 +144,19 @@ if (BMIMark>BMIJohn){
 }else {
     console.log(`Johns BMI (${BMIJohn}) is Higher than Mark's (${BMIMark})!`)
 }
+*/
 
+const scoreDolphins = (96+108+89)/3
+const scoreKoalas = (88+91+110)/3
+
+console.log(scoreDolphins,scoreKoalas)
+
+if(scoreDolphins>scoreKoalas){
+    console.log("Dolphins win the trophy")
+}
+else if (scoreDolphins<scoreKoalas){
+    console.log("Koalas win the trophy")
+}
 
 
 
