@@ -144,19 +144,77 @@ if (BMIMark>BMIJohn){
 }else {
     console.log(`Johns BMI (${BMIJohn}) is Higher than Mark's (${BMIMark})!`)
 }
+
+
+
+
+
+
+// const inputYear ='1991';
+// console.log(inputYear + 18);
+// console.log(Number(inputYear)+18)
+
+// //Coercion
+// console.log('im '+ 37 + ' years old');
+// console.log('23'-'10'-3);
+// console.log('23'*'2')
+// console.log('23'/'2')
+
+// const age ='18';
+// if(age ===18) console.log('You are adult(strict)')
+// if(age ==18) console.log('You are adult(loose)')
+// const favorite =Number (prompt("what's your favorite number? "));
+// console.log(favorite);
+// console.log(typeof favorite);
+
+// if (favorite === 23){
+//     console.log('Cool! 23 is great number')
+// } else if (favorite===7){
+//     console.log('7 is great number also')
+// }else {
+//     console.log('Invalid number! use 7 or 23!')
+// }
+
+// if (favorite !==23) console.log('Why not 23?');
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+// console.log(hasDriversLicense && hasGoodVision)
+// console.log(hasDriversLicense || hasGoodVision)
+// console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision){
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone else should drive')
+// }
+
+const isTired =false;
+
+// console.log(hasDriversLicense||hasGoodVision||isTired)
+
+if (hasDriversLicense && hasGoodVision && !isTired){
+    console.log('Sarah is able to drive!')
+} else{
+    console.log('Someone else should drive...')
+}
 */
 
-const scoreDolphins = (96+108+89)/3
-const scoreKoalas = (88+91+110)/3
 
-console.log(scoreDolphins,scoreKoalas)
 
-if(scoreDolphins>scoreKoalas){
+const scoreDolphins = (96+108+89)/3;
+const scoreKoalas = (88+91+110)/3;
+
+console.log(scoreDolphins,scoreKoalas);
+
+if(scoreDolphins===scoreKoalas){
+    console.log("Both win the trophy")
+}
+else if (scoreDolphins>scoreKoalas){
     console.log("Dolphins win the trophy")
+}else{
+    console.log('Koalas win the trophy')
 }
-else if (scoreDolphins<scoreKoalas){
-    console.log("Koalas win the trophy")
-}
 
-
-
+console.log(typeof scoreDolphins);
