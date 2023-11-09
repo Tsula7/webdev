@@ -144,7 +144,7 @@ if (BMIMark>BMIJohn){
 }else {
     console.log(`Johns BMI (${BMIJohn}) is Higher than Mark's (${BMIMark})!`)
 }
-*/
+
 
 const scoreDolphins = (96+108+89)/3
 const scoreKoalas = (88+91+110)/3
@@ -157,6 +157,11 @@ if(scoreDolphins>scoreKoalas){
 else if (scoreDolphins<scoreKoalas){
     console.log("Koalas win the trophy")
 }
+*/
 
+// const age =16;
+// age >=18 ? console.log('I like drink wine'): console.log('i like to drink water');
 
-
+const bill =275;
+const tip = bill >= 50 && bill <=300 ? bill*15/100 : bill*20/100;
+console.log(`The Bill was ${bill},the tip was ${tip} and the total value is ${bill+tip}`)
