@@ -201,8 +201,7 @@ if (hasDriversLicense && hasGoodVision && !isTired){
 } else{
     console.log('Someone else should drive...')
 }
-// */
-// >>>>>>> 42465e4a97adb162ae2514a813bf3e23e0298036
+// 
 
 
 
@@ -225,9 +224,8 @@ if (hasDriversLicense && hasGoodVision && !isTired){
 // const age =16;
 // age >=18 ? console.log('I like drink wine'): console.log('i like to drink water');
 
+
+
 const bill =275;
 const tip = bill >= 50 && bill <=300 ? bill*15/100 : bill*20/100;
 console.log(`The Bill was ${bill},the tip was ${tip} and the total value is ${bill+tip}`)
-=======
-c
->>>>>>> 42465e4a97adb162ae2514a813bf3e23e0298036
