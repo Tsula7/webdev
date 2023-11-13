@@ -8,7 +8,7 @@
 
 // const interface ='Audio'
 // const private =534;
-
+/*
 function logger(){
     console.log('My name is Jonas')
 }
@@ -28,3 +28,11 @@ const appleJuice = fruitProcessor(5,0);
 console.log(appleJuice)
 const appleOrangeJuice =fruitProcessor(6,7)
 console.log(appleOrangeJuice);
+*/
+
+function calcAge1(birthYeah){
+    // const age = 2037 -birthYeah;
+    return 2037- birthYeah;
+}
+
+calcAge1(1991);
