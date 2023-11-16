@@ -72,7 +72,6 @@ function fruitProcessor(apples, oranges){
 }
 
 console.log(fruitProcessor(2,3));
-*/
 
 const calcAge=function(birthYeah){
     return 2037 -birthYeah;
@@ -94,4 +93,30 @@ const yearsUntilRetirement = function (birthYeah, firstname)  {
 
 console.log(yearsUntilRetirement(1991,'Jonas'));
 console.log(yearsUntilRetirement(1950,'Bob'));
+*/
 
+// const scoreDolphins = (96+108+89)/3;
+// const scoreKoalas = (88+91+110)/3;
+
+// console.log(scoreDolphins,scoreKoalas);
+
+
+const calcAverage = (score1,score2,score3)=> {
+     const scoreAverage = (score1+score2+score3)/3;
+     return scoreAverage;
+}
+
+const scoreDolphins = calcAverage(85,54,41);
+const scoreKoalas =calcAverage(23,34,27);
+
+const checkwinner = function (scoreDolphins,scoreKoalas){
+    if (scoreDolphins>scoreKoalas*2){
+    console.log(`Dolphins win ( ${scoreDolphins} vs. ${scoreKoalas})`)
+    return; } else if (scoreKoalas>scoreDolphins*2){
+    console.log(`Koalas win ( ${scoreKoalas} vs. ${scoreDolphins})`)
+    return;
+ } else{
+    console.log(`No team wins...`)
+ }
+} 
+checkwinner(scoreDolphins,scoreKoalas);
