@@ -45,7 +45,7 @@ const calcage2 =function(birthYeah){
 }
 const age2 = calcage2(1991);
 console.log (age1, age2);
-*/
+
 
 const calcAge3 = birthYeah => 2037 - birthYeah;
 const age3 = calcAge3(1991);
@@ -72,5 +72,26 @@ function fruitProcessor(apples, oranges){
 }
 
 console.log(fruitProcessor(2,3));
+*/
 
+const calcAge=function(birthYeah){
+    return 2037 -birthYeah;
+}
+
+const yearsUntilRetirement = function (birthYeah, firstname)  {
+    const age =calcAge(birthYeah)
+    const retirement = 65 - age;
+    if(retirement>0){
+        console.log(`${firstname} retires in ${retirement} years`)
+        return retirement;
+    } else{
+        console.log(`${firstname} has already retired`)
+        return -1;
+    }
+
+    return retirement;
+}
+
+console.log(yearsUntilRetirement(1991,'Jonas'));
+console.log(yearsUntilRetirement(1950,'Bob'));
 
