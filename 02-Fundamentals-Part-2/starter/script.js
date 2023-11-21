@@ -138,7 +138,7 @@ console.log(friends);
 
 
 
-*/
+
 // ელემენტის ჩამატება მასივის ბოლოში <<.push >> მეოდი
 const friends = ['michael', 'Steven', 'Peter'];
 const newLenght = friends.push('Jay')
@@ -173,5 +173,18 @@ console.log(friends.includes('Bob'))
 if (friends.includes('Steven')){
     console.log('You Have friend named Steven')
 }
+*/
+
+
+const calcTip =  function (bill){
+    if (bill >= 50 && bill <=300){
+       const tip = bill*15/100
+     return tip;
+    } else {
+       const tip = bill*20/100
+     return tip;
+    }
+}
+console.log(calcTip(100));
 
 
