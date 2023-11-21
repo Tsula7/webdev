@@ -93,7 +93,7 @@ const yearsUntilRetirement = function (birthYeah, firstname)  {
 
 console.log(yearsUntilRetirement(1991,'Jonas'));
 console.log(yearsUntilRetirement(1950,'Bob'));
-*/
+
 
 // const scoreDolphins = (96+108+89)/3;
 // const scoreKoalas = (88+91+110)/3;
@@ -120,3 +120,58 @@ const checkwinner = function (scoreDolphins,scoreKoalas){
  }
 } 
 checkwinner(scoreDolphins,scoreKoalas);
+
+
+const friends = ['michael', 'Seteven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991,1984,2008,2020);
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length-1]);
+
+
+friends[2]= 'Jay'
+console.log(friends);
+
+
+
+*/
+// ელემენტის ჩამატება მასივის ბოლოში <<.push >> მეოდი
+const friends = ['michael', 'Steven', 'Peter'];
+const newLenght = friends.push('Jay')
+console.log(friends);
+console.log(newLenght);
+
+// ელემენტის ჩამატება მასივის დასაწყიში unshift მეთოდი
+
+friends.unshift('John');
+console.log(friends);
+// ელემენტების ამოღება მასივიდან, ბოლო ელემენტის ამოღება pop მეთოდით
+
+friends.pop();
+const poped = friends.pop();
+console.log(poped);
+console.log(friends);
+
+//პირველი ელემენტის ამოღება shift მეთოდით
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Steven'))  // indexOf აბრუნებს ელემენტის პოზიციას მასივში
+console.log(friends.indexOf('Bob'))  // indexOf იმ ელემენტზე რომელიც არ არის მასივში დააბრუნებს -1 მნიშვნელობას
+
+
+console.log(friends.includes('Steven')) //includes მეთოდი ამოწმებს არი თუ არა ელემენტი მასივში და აბრუნებს true or false მნიშვლობას strict equality შედარებით.
+console.log(friends.includes('Bob'))
+
+// includes გამოყენების მაგალითი:
+
+if (friends.includes('Steven')){
+    console.log('You Have friend named Steven')
+}
+
+

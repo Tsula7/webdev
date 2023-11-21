@@ -179,8 +179,9 @@ if (BMIMark>BMIJohn){
 
 // if (favorite !==23) console.log('Why not 23?');
 
-const hasDriversLicense = true;
-const hasGoodVision = true;
+*/
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
 
 // console.log(hasDriversLicense && hasGoodVision)
 // console.log(hasDriversLicense || hasGoodVision)
@@ -192,9 +193,10 @@ const hasGoodVision = true;
 //     console.log('Someone else should drive')
 // }
 
+const hasDriversLicense = true;
+const hasGoodVision = true;
 const isTired =false;
 
-// console.log(hasDriversLicense||hasGoodVision||isTired)
 
 if (hasDriversLicense && hasGoodVision && !isTired){
     console.log('Sarah is able to drive!')
@@ -218,11 +220,11 @@ if (hasDriversLicense && hasGoodVision && !isTired){
 // }else{
 //     console.log('Koalas win the trophy')
 // // }
-// // */
+
 
 // <<<<<<< HEAD
-// const age =16;
-// age >=18 ? console.log('I like drink wine'): console.log('i like to drink water');
+const age =16;
+age >=18 ? console.log('I like drink wine'): console.log('i like to drink water');
 
 
 
