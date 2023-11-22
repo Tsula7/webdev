@@ -173,7 +173,7 @@ console.log(friends.includes('Bob'))
 if (friends.includes('Steven')){
     console.log('You Have friend named Steven')
 }
-*/
+
 
 
 const calcTip =  function (bill){
@@ -193,3 +193,43 @@ const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
 console.log(tips);
 const totals = [(bills[0]+tips[0]),(bills[1]+tips[1]),(bills[2]+tips[2])];
 console.log(totals);
+
+
+const jonasArray = [
+    'Jonas',
+    'Schmedtman',
+    2037-1991,
+    'teacher',
+    ['michael', 'Peter', 'Steven']
+];
+*/
+const jonasObj = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtman',
+    age: 2037-1991,
+    job: 'Teacher',
+    friends: ['michael', 'Peter', 'Steven']
+};
+
+console.log(jonasObj);
+console.log(jonasObj.lastName);
+console.log(jonasObj['age']);
+
+
+const nameKey='Name';
+console.log(jonasObj['first'+ nameKey]);
+console.log(jonasObj['last'+ nameKey]);
+
+const intrestedIn = prompt('What do you want to know about Jonas? Choose between firstname, lastName, age, job and friends');
+
+if (jonasObj[intrestedIn]){
+    console.log(jonasObj[intrestedIn]);
+} else {
+    console.log('Wrong Request! Choose between firstname, lastName, age, job and friends. ');
+}
+
+jonasObj.location ='Portugal';
+jonasObj['Twitter']='@jonasshme'
+console.log(jonasObj);
+
+console.log(`${jonasObj.firstName} has ${jonasObj.friends.length} friend and his best friend is called ${jonasObj.friends[0]}!`)
