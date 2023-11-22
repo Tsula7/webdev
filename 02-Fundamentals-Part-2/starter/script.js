@@ -202,7 +202,7 @@ const jonasArray = [
     'teacher',
     ['michael', 'Peter', 'Steven']
 ];
-*/
+
 const jonasObj = {
     firstName: 'Jonas',
     lastName: 'Schmedtman',
@@ -232,4 +232,44 @@ jonasObj.location ='Portugal';
 jonasObj['Twitter']='@jonasshme'
 console.log(jonasObj);
 
-console.log(`${jonasObj.firstName} has ${jonasObj.friends.length} friend and his best friend is called ${jonasObj.friends[0]}!`)
+console.log(`${jonasObj.firstName} has ${jonasObj.friends.length} friend and his best friend is called ${jonasObj.friends[0]}!`);
+*/
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtman',
+    birthYear: 1991,
+    job: 'Teacher',
+    friends: ['michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    
+    // calcAge: function (birthYeah){
+    //     return 2037-birthYeah;
+        
+        
+    // calcAge: function (){                                        //.this ითვლის ამ ობიექტიდან. ობიექტს სახელიც რომ შეეცვალოს შიგინთ სწორად გამოითვლის მაინც
+    //         return 2037 - this.birthYear;
+
+    calcAge: function (){                     //თუ გამოთვლა ბევრჯერ გვჭირდება რომ არ ითვალოს ყოველ ჯერზე თავიდან ვინახავთ ცვლადში გამოთვლის პასუხს და მერე ვიყენებთ მას
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()} old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a': 'no'} drivers license`;
+    
+    }
+ 
+};
+console.log(jonas.calcAge());
+
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.getSummary ());
+
+
+
+
+
+
+
