@@ -233,7 +233,7 @@ jonasObj['Twitter']='@jonasshme'
 console.log(jonasObj);
 
 console.log(`${jonasObj.firstName} has ${jonasObj.friends.length} friend and his best friend is called ${jonasObj.friends[0]}!`);
-*/
+
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtman',
@@ -244,8 +244,7 @@ const jonas = {
     
     // calcAge: function (birthYeah){
     //     return 2037-birthYeah;
-        
-        
+              
     // calcAge: function (){                                        //.this ითვლის ამ ობიექტიდან. ობიექტს სახელიც რომ შეეცვალოს შიგინთ სწორად გამოითვლის მაინც
     //         return 2037 - this.birthYear;
 
@@ -262,14 +261,39 @@ const jonas = {
 };
 console.log(jonas.calcAge());
 
-
 console.log(jonas.age);
 console.log(jonas.age);
 console.log(jonas.getSummary ());
 
+*/
 
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
 
+    calcBMI: function(){
+        this.bmi=this.mass/(this.height*this.height)
+        return this.bmi;
+    }
+}
 
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
 
+    calcBMI: function(){
+        this.bmi=this.mass/(this.height*this.height)
+        return this.bmi;
+    }
+}
+
+const bmiResult = john.calcBMI()>mark.calcBMI()? `${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})!`:
+`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})!`
+
+console.log(mark.calcBMI());
+console.log(john.calcBMI());
+console.log(bmiResult);
 
 
