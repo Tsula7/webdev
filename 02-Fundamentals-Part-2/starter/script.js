@@ -5,7 +5,6 @@
 // if (passTest) hasDriversLicense =true;
 // if (hasDriversLicense)console.log('i can drive');
 
-
 // const interface ='Audio'
 // const private =534;
 /*
@@ -404,39 +403,34 @@ while(dice !==6){
 }
 */
 const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-  }
-  
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52,];
-
-
-const tips = [];
-const totals =[];
-
-for (let i=0; i<bills.length ; i++){
- tips.push(calcTip(bills[i]));
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
 
-for (let i=0; i<bills.length ; i++){
-    totals.push(calcTip(bills[i])+bills[i]);
-   }
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
+const tips = [];
+const totals = [];
 
-console.log(bills);   
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+}
+
+for (let i = 0; i < bills.length; i++) {
+  totals.push(calcTip(bills[i]) + bills[i]);
+}
+
+console.log(bills);
 console.log(tips);
 console.log(totals);
 
-
 const calcAverage = function (arr) {
-    let sum=0
+  let sum = 0;
 
-for (let i=0; i<arr.length;i++){
-    sum = sum+arr[i]
-}
-    return sum/arr.length
-
-
-}
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum / arr.length;
+};
 console.log(calcAverage(totals));
 
-
+const x = '23';
