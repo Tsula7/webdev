@@ -435,4 +435,4 @@ console.log(calcAverage(totals));
 
 const x = '23';
 
-const calcAge = x => 2037 - x;
+console.log('jsjszzj');
